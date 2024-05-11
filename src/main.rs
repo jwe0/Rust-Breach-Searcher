@@ -2,7 +2,23 @@ use std::io::{self, BufRead, Write};
 use std::fs::{self, File};
 use std::time::Instant;
 
+fn art() {
+    print!(r#"
+
+ ____            _     ____                      _     
+|  _ \ _   _ ___| |_  / ___|  ___  __ _ _ __ ___| |__  
+| |_) | | | / __| __| \___ \ / _ \/ _` | '__/ __| '_ \ 
+|  _ <| |_| \__ \ |_   ___) |  __/ (_| | | | (__| | | |
+|_| \_\\__,_|___/\__| |____/ \___|\__,_|_|  \___|_| |_|
+    
+"#)
+}
+
+
+
+
 fn main() {
+    art();
     print!("Breach Folder: ");
     io::stdout().flush().unwrap();
     let mut folder = String::new();
